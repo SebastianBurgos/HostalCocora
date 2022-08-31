@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="496.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BienvenidaController">
+   <children>
+      <Label layoutX="88.0" layoutY="112.0" text="BIENVENIDO" textFill="#1d7cae">
+         <font>
+            <Font name="KaiTi" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="221.0" text="HOSTAL COCORA" textFill="#611111">
+         <font>
+            <Font name="KaiTi" size="42.0" />
+         </font>
+      </Label>
+      <Button layoutX="105.0" layoutY="334.0" mnemonicParsing="false" onAction="#ingresarLogin" prefHeight="53.0" prefWidth="177.0" text="INGRESAR" textFill="#55abe4">
+         <font>
+            <Font name="Lato Regular" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
