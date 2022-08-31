@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="501.0" prefWidth="661.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuRecepcionistaController">
+   <children>
+      <Label layoutX="43.0" layoutY="25.0" text="HOSTAL COCORA" textFill="#611111" underline="true">
+         <font>
+            <Font name="KaiTi" size="42.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="137.0" fitWidth="135.0" layoutX="457.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icono.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="129.0" layoutY="120.0" mnemonicParsing="false" onAction="#mostrarHabitaciones" prefHeight="70.0" prefWidth="214.0" text="Habitaciones" textFill="#0c6ca8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Separator layoutX="398.0" layoutY="25.0" orientation="VERTICAL" prefHeight="459.0" prefWidth="4.0" />
+      <Label layoutX="433.0" layoutY="183.0" prefHeight="228.0" prefWidth="214.0" text="Recepción&#10;Menú &#10;Principal" textAlignment="CENTER" textFill="#11334a" underline="true">
+         <font>
+            <Font name="KaiTi" size="42.0" />
+         </font>
+      </Label>
+      <Button layoutX="129.0" layoutY="201.0" mnemonicParsing="false" onAction="#mostrarReservas" prefHeight="70.0" prefWidth="214.0" text="Reservas" textFill="#0c6ca8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="129.0" layoutY="282.0" mnemonicParsing="false" onAction="#mostrarCamas" prefHeight="70.0" prefWidth="214.0" text="Camas" textFill="#0c6ca8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="129.0" layoutY="368.0" mnemonicParsing="false" onAction="#mostrarClientes" prefHeight="70.0" prefWidth="214.0" text="Clientes" textFill="#0c6ca8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="496.0" layoutY="411.0" mnemonicParsing="false" onAction="#mostrarVentanaBienvenida" prefHeight="34.0" prefWidth="57.0" text="←" textFill="#e35656">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="43.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/casab.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="30.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/reservas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="30.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cama.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="34.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cliente.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

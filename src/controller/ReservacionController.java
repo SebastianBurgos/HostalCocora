@@ -7,7 +7,7 @@ import application.Aplicacion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
-public class BienvenidaController {
+public class ReservacionController {
 	Aplicacion aplicacion;
 
     @FXML
@@ -17,21 +17,21 @@ public class BienvenidaController {
     private URL location;
 
     @FXML
-    void ingresarLoginRecepcionista(ActionEvent event) {
-    	aplicacion.abrirMenuRecepcionista();
+    void mostrarVentanaDisponibilidad(ActionEvent event) {
+    	aplicacion.abrirVentanaHabitacionesDisponibles();
     }
 
     @FXML
-    void ingresarLoginCliente(ActionEvent event) {
+    void mostrarVentanaLogin(ActionEvent event) {
     	aplicacion.abrirLoginCliente();
-    }
-
-    @FXML
-    void initialize() {
-
     }
 
 	public void setAplicacion(Aplicacion aplicacion) {
 		this.aplicacion = aplicacion;
 	}
+
+    @FXML
+    void initialize() {
+
+    }
 }

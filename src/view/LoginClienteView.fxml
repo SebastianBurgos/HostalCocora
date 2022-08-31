@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="428.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginClienteController">
+   <children>
+      <Label layoutX="153.0" layoutY="91.0" text="LOGIN" textFill="#1d7cae">
+         <font>
+            <Font name="KaiTi" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="27.0" text="HOSTELS COCORA" textFill="#611111">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button layoutX="115.0" layoutY="414.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="34.0" prefWidth="212.0" text="INICIAR SESION" textFill="#1779b5">
+         <font>
+            <Font name="Lato Regular" size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nombreUsuario" layoutX="30.0" layoutY="229.0" prefHeight="40.0" prefWidth="374.0" />
+      <Label layoutX="30.0" layoutY="195.0" text="Nombre Usuario:">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="292.0" text="Contraseña:">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <PasswordField fx:id="contraseña" layoutX="34.0" layoutY="337.0" prefHeight="40.0" prefWidth="374.0" />
+      <ImageView fitHeight="72.0" fitWidth="81.0" layoutX="333.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icono.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="115.0" layoutY="488.0" mnemonicParsing="false" onAction="#iniciarRegistro" prefHeight="51.0" prefWidth="212.0" text="REGISTRARSE" textFill="#023251">
+         <font>
+            <Font name="Lato Regular" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="12.0" layoutY="557.0" mnemonicParsing="false" onAction="#mostrarVentanaBienvenida" prefHeight="34.0" prefWidth="57.0" text="←" textFill="#e35656">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

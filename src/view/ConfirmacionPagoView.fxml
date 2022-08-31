@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="428.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConfirmacionPagoController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="94.0" prefHeight="462.0" prefWidth="410.0" style="-fx-background-color: #8CB5A9;">
+         <children>
+            <Label layoutX="3.0" prefHeight="452.0" prefWidth="400.0" text="¡Muchas gracias por&#10;contar con nosotros!&#10;El comprobante de pago&#10;e información complementaria&#10;serán enviados a tu correo&#10;electrónico.&#10;Recuerda que todas nuestras &#10;habitaciones cuentan con&#10;baño privado, teléfono, intertnet &#10;y parqueadero." textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="30.0" layoutY="27.0" text="HOSTELS COCORA" textFill="#611111">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="347.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icono.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="volverBienvenida" layoutX="186.0" layoutY="563.0" mnemonicParsing="false" onAction="#mostrarVentanaLogin" prefHeight="34.0" prefWidth="57.0" textFill="#e35656">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="203.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icono.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

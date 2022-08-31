@@ -6,8 +6,9 @@ import java.util.ResourceBundle;
 import application.Aplicacion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 
-public class BienvenidaController {
+public class ConfirmacionPagoController {
 	Aplicacion aplicacion;
 
     @FXML
@@ -17,21 +18,16 @@ public class BienvenidaController {
     private URL location;
 
     @FXML
-    void ingresarLoginRecepcionista(ActionEvent event) {
-    	aplicacion.abrirMenuRecepcionista();
-    }
+    private Button volverBienvenida;
 
     @FXML
-    void ingresarLoginCliente(ActionEvent event) {
-    	aplicacion.abrirLoginCliente();
-    }
-
-    @FXML
-    void initialize() {
-
+    void mostrarVentanaLogin(ActionEvent event) {
+    	aplicacion.mostrarVentanaBienvenida();
     }
 
 	public void setAplicacion(Aplicacion aplicacion) {
 		this.aplicacion = aplicacion;
 	}
+
+
 }
