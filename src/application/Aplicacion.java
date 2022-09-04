@@ -5,12 +5,12 @@ import controller.ConfirmacionPagoController;
 import controller.HabitacionesDisponiblesController;
 import controller.LoginClienteController;
 import controller.MenuRecepcionistaController;
+import controller.RegistroClienteController;
 import controller.ReservacionController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import model.Hostal;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 
@@ -131,6 +131,24 @@ public class Aplicacion extends Application {
 
 			ConfirmacionPagoController confirmacionPagoController = loader.getController();
 			confirmacionPagoController.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void mostrarVentanaRegistroCliente() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("/view/RegistroClienteView.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			RegistroClienteController registroClienteController = loader.getController();
+			registroClienteController.setAplicacion(this);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);

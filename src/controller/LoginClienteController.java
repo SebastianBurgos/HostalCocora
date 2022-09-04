@@ -27,7 +27,7 @@ public class LoginClienteController {
 
     @FXML
     void iniciarRegistro(ActionEvent event) {
-
+    	aplicacion.mostrarVentanaRegistroCliente();
     }
 
     @FXML
