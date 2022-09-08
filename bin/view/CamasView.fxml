@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="511.0" prefWidth="806.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CamasController">
+   <children>
+      <Label layoutX="378.0" layoutY="14.0" text="Camas" textFill="#1d7cae">
+         <font>
+            <Font name="KaiTi" size="42.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label layoutX="20.0" layoutY="14.0" text="HOSTAL COCORA" textFill="#611111">
+         <font>
+            <Font name="KaiTi" size="42.0" />
+         </font>
+      </Label>
+      <Button layoutX="628.0" layoutY="27.0" mnemonicParsing="false" onAction="#mostrarMenuRecepcionista" prefHeight="34.0" prefWidth="57.0" text="←" textFill="#e35656">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <TableView layoutX="29.0" layoutY="104.0" prefHeight="385.0" prefWidth="748.0">
+        <columns>
+          <TableColumn prefWidth="136.0" text="Cama(ID)" />
+          <TableColumn prefWidth="195.0" text="Tipo de Cama" />
+            <TableColumn prefWidth="217.0" text="Estado" />
+            <TableColumn minWidth="0.0" prefWidth="199.0" text="Habitacion" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="79.0" fitWidth="92.0" layoutX="702.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icono.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="361.0" fitWidth="748.0" layoutX="27.0" layoutY="127.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/Tabla.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

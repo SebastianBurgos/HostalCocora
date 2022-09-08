@@ -18,22 +18,22 @@ public class MenuRecepcionistaController {
 
     @FXML
     void mostrarHabitaciones(ActionEvent event) {
-
+    	aplicacion.mostrarVentanaHabitaciones();
     }
 
     @FXML
     void mostrarReservas(ActionEvent event) {
-
+    	aplicacion.mostrarVentanaReservas();
     }
 
     @FXML
     void mostrarCamas(ActionEvent event) {
-
+    	aplicacion.mostrarVentanaCamas();
     }
 
     @FXML
     void mostrarClientes(ActionEvent event) {
-
+    	aplicacion.mostrarVentanaClientes();
     }
 
     @FXML

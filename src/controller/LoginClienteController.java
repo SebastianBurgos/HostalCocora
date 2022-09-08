@@ -1,5 +1,7 @@
 package controller;
 
+import javax.swing.JOptionPane;
+
 import application.Aplicacion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -21,6 +23,7 @@ public class LoginClienteController {
 
     @FXML
     void iniciarSesion(ActionEvent event) {
+    	JOptionPane.showMessageDialog(null, "INICIO DE SESION EXITOSO");
     	aplicacion.mostrarVentanaReservacion();
     }
 

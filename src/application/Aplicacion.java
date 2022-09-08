@@ -1,12 +1,17 @@
 package application;
 
 import controller.BienvenidaController;
+import controller.CamasController;
+import controller.ClientesController;
 import controller.ConfirmacionPagoController;
+import controller.HabitacionEjemploController;
+import controller.HabitacionesController;
 import controller.HabitacionesDisponiblesController;
 import controller.LoginClienteController;
 import controller.MenuRecepcionistaController;
 import controller.RegistroClienteController;
 import controller.ReservacionController;
+import controller.ReservasController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -149,6 +154,96 @@ public class Aplicacion extends Application {
 
 			RegistroClienteController registroClienteController = loader.getController();
 			registroClienteController.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void mostrarVentanaHabitaciones() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("/view/HabitacionesView.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			HabitacionesController habitacionesController = loader.getController();
+			habitacionesController.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void abrirVentanaHabitacionEjemplo() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("/view/HabitacionEjemploView.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			HabitacionEjemploController habitacionEjemploController = loader.getController();
+			habitacionEjemploController.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void mostrarVentanaReservas() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("/view/ReservasView.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			ReservasController reservasController = loader.getController();
+			reservasController.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void mostrarVentanaCamas() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("/view/CamasView.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			CamasController camasController = loader.getController();
+			camasController.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void mostrarVentanaClientes() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("/view/ClientesView.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			ClientesController clientesController = loader.getController();
+			//clientesController.setAplicacion(this);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);

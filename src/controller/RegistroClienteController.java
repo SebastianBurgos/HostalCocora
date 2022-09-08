@@ -3,6 +3,8 @@ package controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javax.swing.JOptionPane;
+
 import application.Aplicacion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -38,6 +40,7 @@ public class RegistroClienteController {
 
     @FXML
     void mensajeRegistro(ActionEvent event) {
+    	JOptionPane.showMessageDialog(null, "REGISTRADO CON EXITO");
     	aplicacion.abrirLoginCliente();
     }
 

@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<AnchorPane prefHeight="511.0" prefWidth="806.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HabitacionesController">
+<AnchorPane prefHeight="511.0" prefWidth="806.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservasController">
    <children>
-      <Label layoutX="378.0" layoutY="14.0" text="Habitaciones" textFill="#1d7cae">
+      <Label layoutX="378.0" layoutY="14.0" text="Reservas" textFill="#1d7cae">
          <font>
             <Font name="KaiTi" size="42.0" />
          </font>
@@ -170,7 +170,7 @@
             <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="42.0" style="-fx-background-color: green;" text="18" GridPane.columnIndex="5" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <Label layoutX="77.0" layoutY="140.0" text="Habitaciones Sencillas:">
+      <Label layoutX="76.0" layoutY="155.0" text="Habitaciones Sencillas:">
          <effect>
             <Bloom />
          </effect>
@@ -178,7 +178,7 @@
             <Font size="29.0" />
          </font>
       </Label>
-      <Label layoutX="452.0" layoutY="140.0" text="Habitaciones Dobles:">
+      <Label layoutX="454.0" layoutY="155.0" text="Habitaciones Dobles:">
          <effect>
             <Bloom />
          </effect>
@@ -218,5 +218,14 @@
             <Font size="18.0" />
          </font>
       </Label>
+      <Label layoutX="73.0" layoutY="93.0" text="Reservas del cliente:">
+         <effect>
+            <Bloom />
+         </effect>
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField layoutX="348.0" layoutY="99.0" prefHeight="32.0" prefWidth="238.0" />
    </children>
 </AnchorPane>
